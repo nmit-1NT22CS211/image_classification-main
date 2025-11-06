@@ -31,21 +31,22 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .prediction-box {
-        padding: 1rem;
-        border-radius: 10px;
+        padding: 1.5rem;
+        border-radius: 12px;
         border: 2px solid #1f77b4;
-        background-color: #f0f8ff;
+        background-color: #1f77b4; /* <-- changed from light blue to solid blue */
         text-align: center;
         margin: 1rem 0;
+        color: white; /* <-- makes text readable */
+        font-weight: bold;
     }
-    .confidence-bar {
-        background-color: #e0e0e0;
-        border-radius: 10px;
-        padding: 5px;
-        margin: 5px 0;
+    .prediction-box h2, .prediction-box h3 {
+        color: white; /* ensures all heading text is white */
+        margin: 0.5rem 0;
     }
 </style>
 """, unsafe_allow_html=True)
+
 
 # Title
 st.markdown('<h1 class="main-header">🖼️ CIFAR-10 Image Classifier</h1>', unsafe_allow_html=True)
